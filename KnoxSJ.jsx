@@ -5,11 +5,12 @@ import { CausesSection, ImpactSection, AboutSection } from "./src/sections.jsx";
 const TICKER = ["Refugees","Climate Action","Family Violence","Homelessness","Gender Equality","Education","Legacy","Community Service","Human Rights","Reconciliation"];
 
 const HERO_STICKERS = [
-  { icon:"🌏", t:"Refugees",       sub:"Toys for STARTTS",  c:"#FF5B30", bg:"#FBE3D6", top:"-2%", left:"6%",  r:"-6deg" },
-  { icon:"🏠", t:"Shelter",        sub:"Wesley Mission",    c:"#2F6B47", bg:"#DEEBE1", top:"20%", left:"42%", r:"5deg"  },
-  { icon:"💜", t:"Respect",        sub:"Family violence",   c:"#B0447E", bg:"#F3E0EC", top:"42%", left:"0%",  r:"3deg"  },
-  { icon:"✊", t:"Equality",       sub:"Gender equity",     c:"#E89211", bg:"#FBF0D6", top:"63%", left:"38%", r:"-5deg" },
-  { icon:"★",  t:"Fridays @ lunch", sub:"AGC 112–113",      c:"#FBB915", bg:"#211710", dark:true, top:"84%", left:"4%", r:"-3deg" },
+  { icon:"★",  t:"Capital Finance Club", sub:"Built this site", c:"#211710", bg:"#FBB915", top:"-4%", left:"2%",  r:"-5deg" },
+  { icon:"🌏", t:"Refugees",       sub:"Toys for STARTTS",  c:"#FF5B30", bg:"#FBE3D6", top:"15%", left:"44%", r:"5deg"  },
+  { icon:"🏠", t:"Shelter",        sub:"Wesley Mission",    c:"#2F6B47", bg:"#DEEBE1", top:"34%", left:"0%",  r:"3deg"  },
+  { icon:"💜", t:"Respect",        sub:"Family violence",   c:"#B0447E", bg:"#F3E0EC", top:"53%", left:"42%", r:"-4deg" },
+  { icon:"✊", t:"Equality",       sub:"Gender equity",     c:"#E89211", bg:"#FBF0D6", top:"70%", left:"2%",  r:"6deg"  },
+  { icon:"🤝", t:"Fridays @ lunch", sub:"AGC 112–113",      c:"#FBB915", bg:"#211710", dark:true, top:"88%", left:"40%", r:"-3deg" },
 ];
 
 export default function KnoxSJ() {
