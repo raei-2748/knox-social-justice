@@ -53,14 +53,19 @@ const MAP_BOUNDS = [[7, 100], [-37, 154]];
 // via VITE_STADIA_API_KEY (.env, never committed). When the site is served from
 // a domain registered in the Stadia dashboard the key is optional, so we only
 // append it when present, keeping local dev working too.
+// Stadia needs a registered domain or API key. When a key is supplied we use
+// Stadia's dark theme; otherwise we fall back to CARTO's keyless dark basemap
+// so the map works out of the box on GitHub Pages (no secret required).
 const STADIA_KEY = import.meta.env.VITE_STADIA_API_KEY;
-const TILE_URL =
-  "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png" +
-  (STADIA_KEY ? `?api_key=${STADIA_KEY}` : "");
-const TILE_ATTRIBUTION =
-  '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> ' +
-  '&copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> ' +
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+const TILE_URL = STADIA_KEY
+  ? `https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=${STADIA_KEY}`
+  : "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
+const TILE_ATTRIBUTION = STADIA_KEY
+  ? '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> ' +
+    '&copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  : '&copy; <a href="https://carto.com/">CARTO</a> ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
 // Custom map pin built with HTML so no marker image assets are needed.
 function pinIcon(active) {
