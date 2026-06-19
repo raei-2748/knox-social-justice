@@ -357,8 +357,11 @@ export function SiteFooter() {
         <span style={{ color:"rgba(251,244,232,0.4)", fontSize:13, fontWeight:500 }}>
           © {year} Knox Social Justice · Knox Grammar School, Wahroonga NSW
         </span>
-        <span style={{ color:"rgba(251,244,232,0.3)", fontSize:13 }}>
-          Built with care by the Knox Capital Finance Club
+        <span style={{ display:"inline-flex", alignItems:"center", gap:8, color:"rgba(251,244,232,0.55)", fontSize:13, fontWeight:600 }}>
+          Designed &amp; built by the
+          <span className="hm-tag" style={{ background:P.sun, color:P.ink, fontSize:12, fontWeight:900, letterSpacing:"0.3px", padding:"4px 11px" }}>
+            Knox Capital Finance Club
+          </span>
         </span>
       </div>
     </footer>
