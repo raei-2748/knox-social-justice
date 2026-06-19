@@ -5,7 +5,7 @@ import { CausesSection, ImpactSection, AboutSection } from "./src/sections.jsx";
 const TICKER = ["Refugees","Climate Action","Family Violence","Homelessness","Gender Equality","Education","Legacy","Community Service","Human Rights","Reconciliation"];
 
 const HERO_STICKERS = [
-  { icon:"🤝", t:"Capital Finance Club", sub:"Supported by", c:"#5C4D40", bg:"#FBF4E8", top:"-4%", left:"2%",  r:"-5deg" },
+  { icon:"🎗️", t:"Legacy",          sub:"Legacy Day",       c:"#3E78A6", bg:"#DDE9F3", top:"-4%", left:"2%",  r:"-5deg" },
   { icon:"🌏", t:"Refugees",       sub:"Toys for STARTTS",  c:"#FF5B30", bg:"#FBE3D6", top:"15%", left:"44%", r:"5deg"  },
   { icon:"🏠", t:"Shelter",        sub:"Wesley Mission",    c:"#2F6B47", bg:"#DEEBE1", top:"34%", left:"0%",  r:"3deg"  },
   { icon:"💜", t:"Respect",        sub:"Family violence",   c:"#B0447E", bg:"#F3E0EC", top:"53%", left:"42%", r:"-4deg" },
